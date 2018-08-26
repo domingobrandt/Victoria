@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatMenuModule} from '@angular/material/menu';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppComponent } from './app.component';
+import { InventaryRoutingModule } from "./inventory/inventoryrouting.module";
 import 'hammerjs';
 import { HomeComponent } from './home/home.component';
 import { ClientComponent } from './client/client.component';
@@ -22,7 +23,8 @@ import { InventoryComponent } from './inventory/inventory.component';
     BrowserModule,
     BrowserAnimationsModule,
     MatMenuModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    InventaryRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
