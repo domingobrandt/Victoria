@@ -17,6 +17,7 @@ const inventaryRoutes: Routes = [
            { path: '', redirectTo: 'list', pathMatch: 'full' },
            { path: 'list', component: InventorylistComponent },
            { path: 'detail', component: InventorydetailComponent },
+           { path: 'detail/:id', component: InventorydetailComponent },
         ]},
     {path: 'contact', component: ContactComponent},
  ];
