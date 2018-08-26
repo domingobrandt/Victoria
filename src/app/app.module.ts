@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatButtonModule} from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppComponent } from './app.component';
 import { InventaryRoutingModule } from "./inventory/inventoryrouting.module";
@@ -22,9 +23,10 @@ import { InventoryComponent } from './inventory/inventory.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatMenuModule,
+    MatMenuModule,MatButtonModule,
     FlexLayoutModule,
-    InventaryRoutingModule
+    InventaryRoutingModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
