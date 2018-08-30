@@ -7,6 +7,7 @@ import { InventoryComponent }         from './inventory.component';
 import { ContactComponent } from "../contact/contact.component";
 import { InventorylistComponent } from './inventorylist/inventorylist.component';
 import { InventorydetailComponent } from './inventorydetail/inventorydetail.component';
+import {CommonModule} from '@angular/common';
 
 
 const inventaryRoutes: Routes = [
@@ -24,7 +25,8 @@ const inventaryRoutes: Routes = [
  
  @NgModule({
     imports: [
-       RouterModule.forRoot(inventaryRoutes)
+       RouterModule.forRoot(inventaryRoutes),
+       CommonModule
     ],
     exports: [
        RouterModule
