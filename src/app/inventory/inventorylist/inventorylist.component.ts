@@ -27,5 +27,10 @@ export class InventorylistComponent implements OnInit {
   }
  
 
+
   
+}
+export class TableBasicExample {
+  displayedColumns: string[] = ['id producto', 'producto', 'stock', 'precio','proveedor'];
+  dataSource = Inventory;
 }
