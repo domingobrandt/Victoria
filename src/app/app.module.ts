@@ -12,6 +12,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {HttpModule }           from '@angular/http';
 import {ReactiveFormsModule } from '@angular/forms';
 import { InventoryModule } from './inventory/inventory.module';
+import { ProveedorModule } from './proveedor/proveedor.module';
 import 'hammerjs';
 import { AppRoutingModule } from './/app-routing.module';
 import {MatCheckboxModule} from '@angular/material/checkbox';
@@ -27,21 +28,20 @@ import {MatChipsModule} from '@angular/material/chips';
 import {MatListModule} from '@angular/material/list';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
-import { InventoryComponent } from "./inventory/inventory.component";
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ClientComponent,
     ContactComponent,
-    
-
-
   ],
+
   imports: [
     CommonModule,
     BrowserModule,
     InventoryModule,
+    ProveedorModule,
     BrowserAnimationsModule,
     HttpModule,
     FlexLayoutModule,

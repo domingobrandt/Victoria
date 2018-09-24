@@ -1,3 +1,59 @@
-<p>
-  inventorydetail works!
-</p>
+<!-- <div class="container"
+  fxLayout="column"
+  fxLayoutGap="10px">
+
+  <div fxFlex>
+    <div>
+        <h3>detail</h3>
+        <hr>
+    </div>
+  </div>
+
+  <div fxFlex fxFlexOffset="20px" class="form-size">
+      <h3>detail</h3>
+      <p>{{ feedbackForm.value | json }} {{ feedbackForm.status | json }}</p>
+
+      <form novalidate [formGroup]="feedbackForm" #fform="ngForm" (ngSubmit)="onSubmit()" class="formu" *ngIf="showform" [@expand]>
+        <p>
+          <mat-form-field class="half-width">
+            <input matInput formControlName="id_pro" placeholder="id_pro" type="number" class="tumb" required>
+            <mat-error *ngIf="formErrors.id_pro">{{formErrors.id_pro}}</mat-error>
+          </mat-form-field>
+          <mat-form-field class="half-width">
+            <input matInput formControlName="producto" placeholder="producto" type="text" class="tumb" required>
+            <mat-error *ngIf="formErrors.producto">{{formErrors.producto}}</mat-error>
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field class="half-width">
+            <input matInput formControlName="stock" placeholder="stock" type="number"  required>
+            <mat-error *ngIf="formErrors.stock">{{formErrors.stock}}</mat-error>
+          </mat-form-field>
+          <mat-form-field class="half-width">
+            <input matInput formControlName="stock" placeholder="stock" type="number" required>
+            <mat-error *ngIf="formErrors.stock">{{formErrors.id_prov}}</mat-error>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-select placeholder="id_prov">
+              <mat-option *ngFor="let food of foods" [value]="food.value">
+                {{food.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </p>
+        <table class="form-size">
+          <td>
+            <mat-select placeholder="How?" formControlName="contacttype">
+              <mat-option *ngFor="let ctype of contactType" [value]="ctype">
+                {{ ctype }}
+              </mat-option>
+            </mat-select>
+          </td>
+          </table>
+        <p>
+          <mat-form-field class="full-width">
+            <textarea matInput formControlName="message" placeholder="Your Feedback" rows=12></textarea>
+          </mat-form-field>
+        </p>
+        <button type="submit" mat-button class="background-primary text-floral-white">Submit</button>
+      </form>-->

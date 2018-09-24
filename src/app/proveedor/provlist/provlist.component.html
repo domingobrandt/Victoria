@@ -1,0 +1,19 @@
+
+      <table class="table table-hover">
+        <thead class="thead-default">
+           <tr>
+              <th>Id </th>
+              <th>nombre</th>
+              <th>numero telefonico</th>
+              <th>direcion</th>
+           </tr>
+        </thead>
+        <tbody>
+           <tr *ngFor="let item of list">
+               <td>{{ item.id_prov }}</td>
+               <td>{{ item.nombre }}</td>
+               <td>{{ item.phone }}</td>
+               <td>{{ item.direc }}</td>
+           </tr>
+        </tbody>
+     </table>
